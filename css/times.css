@@ -1,84 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Coustard|Quicksand|Ultra|Vollkorn');
+
 *,
 *::after,
-*::before{
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 16px;
     line-height: 1.6;
+    font-family: 'Quicksand', "helvetica", sans-serif;
+    /*background-color: hsl(202, 69%, 79%);*/
     /*font-family: font stack required for body text */
+    background-color: hsl(212, 46%, 43%);
+    
 }
-h1, h2, h3, h4{
+
+h1,
+h2,
+h3,
+h4 {
+    
     /*font-family: font stack required for headings */
+    font-family: 'Vollkorn', "Times New Roman", serif;
 }
-p{
+
+p {
+
+}
+
+.container {
+    max-width: 1500px;
+    margin: 1rem auto;
+
+}
+
+.subnav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.subnav a {
+    padding: 1rem;
+}
+
+.mainnav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size:1.5rem;
+    clear: both;
+    color: hsl(212, 46%, 43%);
+    background-color: hsl(0, 0%, 83%);
+    
     
 }
-.container{
-    
-}
-.subnav{
-    
-}
-.subnav a{
-    
-}
-.mainnav{
-    
-}
+
 .mainnav a{
+    flex: 100% 1 1;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(212, 46%, 43%);
+    padding: 8px;
+    font-weight: bold;
+    /*border: 2px solid black;*/
+}
+
+.masthead {
+    text-align: center;
+    font-family: 'Ultra', "Times New Roman", serif;
     
 }
-.masthead{
-    
+
+.times-logo {
+    width:30%;
+    float:left
 }
-.times-logo{
-    
+
+.masthead h1 {
+    line-height: 8rem;
+    font-size: 6rem;
+    clear: right;
+    font-family: 'Kaushan Script', cursive, serif;
+    color: hsl(205, 35%, 54%);
+    padding: 8;
+
 }
-.masthead h1{
-    
+
+.content {
+    display: flex;
+    align-self: auto;
+    text-align: justify;
+    background-color: hsl(208, 100%, 97%);
+    flex-grow: 2;
+    /*padding: 8px;*/
+    margin-top:0px;
 }
-.content{
-    
+
+.content .story {
+    padding: 10px;
+    border: 1px solid black;
+
 }
-.content .story{
-    
+
+.story.lead-story {
+    flex:0 0 45%;
 }
-.story.lead-story{
-    
+
+h1.story-title {
+    font-size:2rem;
+    border-bottom: 2px solid hsl(212, 46%, 43%);
 }
-h1.story-title{
-    
+
+.story img {
 }
-.story img{
-    
+
+.story p {
+    padding:4px;
 }
-.story p{
-    
+
+.story blockquote {
+    quotes: "\201C""\201D";
+    font-weight: bolder;
+    padding:16px;
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive, serif; 
+    color: hsl(212, 46%, 43%);
 }
-.story blockquote{
-    quotes: "\201E" "\201D";
-}
-.story blockquote::before{
+
+.story blockquote::before {
     content: open-quote;
 }
-.story blockquote::after{
+
+.story blockquote::after {
     content: close-quote;
 }
-.story p.byline{
-    
+
+.story p.byline {
+    padding:10px;
+    font-family:bold;
+    font-size: 1.2rem;
 }
-p.byline span.author{
-    
+
+p.byline span.author {}
+
+p.byline span.pub {}
+
+.foot {
+    text-align:center;
 }
-p.byline span.pub{
-    
-}
-.foot{
-    
-}
-.foot p{
-    
-}
+
+.foot p {}
